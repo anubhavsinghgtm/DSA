@@ -1,0 +1,84 @@
+1. Header
+1.1) header file: This is preprocessor directives that tells the compiler to include the certain file. 
+
+1.2) In C++ for the input and output we use "iostream" as our header file. -> #include<iostream>
+
+1.3) 'std' is the namespace that is used to while dealing with cin and cout operations.
+
+1.4) Namespace is basically a way to group identifiers(such as variables, functions and classes) together to avoid naming confilcts.
+
+Ex - suppose there are two namespace 'a' and 'b'. and there are two identifiers with the same name 'catch'. Now if you want to use the 'catch' from the 'a'. You can actually by 'a::catch'. This tells the compiler to use the catch from the namespace a.
+
+1.5) In the above example, 'std' stands for standard. 
+
+1.6) we can define this -> using namespace std; just after the header files.
+
+-----------------------------------------------------------------------------------
+
+
+2. Main function
+
+2.1) The structure for the main function goes like: 
+int main(){
+
+//statements
+
+return 0;
+}
+
+
+2.2) 'int' at the beginning indicates that it is an 'integer' return type function. In the simpler term you can say after doing its work this function will return a value of integer type.
+
+2.3) The program starts executing from the main function only. But we have the ways through which we can run another function before actually running the main function. That you can do with using "global objects".
+
+
+#include <iostream>
+
+class Startup {
+public:
+    Startup() {
+        std::cout << "Initializing..." << std::endl;
+    }
+};
+
+Startup globalStartup;
+
+int main() {
+    std::cout << "Inside main" << std::endl;
+    return 0;
+}
+----------------------------------------------------------------------------------
+
+
+3. Input and output
+
+3.1) 'cin' is used for the input
+
+std::cin >> n;
+
+3.2) 'cout' is used for the output
+
+std::cout << "Output";
+
+3.3) 'endl' is used for the end of the line. Like you want to tell the compiler that you want the next output should be in the next line then you can use this.
+
+std::cout<<"Output"<<endl;
+
+3.4) '\n' is the another syntax that you can use for the new line. but 'endl' also flushes the buffer immediately so in some cases it may degrade your code performance.
+
+----------------------------------------------------------------------------------------------------
+
+4. Comment
+
+4.1) '//' is used for the single line comment.
+
+4.2) '/*'  commented text '*/' this is used for the multiline comment.
+
+
+
+
+
+
+
+
+

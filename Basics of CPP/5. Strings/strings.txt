@@ -1,0 +1,5 @@
+1. Header file for the string is <string>. Must include this before using string in the code.
+
+2. We can simply add two strings using '+' and that is called 'string concatenation'.
+
+3. String in CPP is an object which has some function of its own. like str1.append(str2). This will add both of the string in str1.

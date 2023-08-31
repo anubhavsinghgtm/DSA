@@ -1,0 +1,9 @@
+1. C++ is used to create computer programs, and is one of the most used language in game development.
+
+2. C++ was developed by Bjarne Stroustrup,
+
+3. The language was updated 4 major times in 2011, 2014, 2017, and 2020 to C++11, C++14, C++17, C++20.
+
+4. C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.
+
+5. C++ was developed as an extension of C, the main difference between C and C++ is that C++ supports classes and objects, while c does not. 

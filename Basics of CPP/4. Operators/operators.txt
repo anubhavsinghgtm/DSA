@@ -1,0 +1,112 @@
+C++ provides a wide range of operators that allow you to perform various operations on variables and values. These operators can be categorized into several groups based on their functionality. Here's an overview of the main categories of operators in C++:
+
+1. Types:
+1.1) Arithmetic Operators:
+These operators are used to perform basic arithmetic operations.
+- `+` (addition)
+- `-` (subtraction)
+- `*` (multiplication)
+- `/` (division)
+- `%` (modulus, remainder)
+
+1.2) Relational Operators:
+These operators are used to compare values and return a Boolean result.
+- `==` (equal to)
+- `!=` (not equal to)
+- `<` (less than)
+- `>` (greater than)
+- `<=` (less than or equal to)
+- `>=` (greater than or equal to)
+
+1.3) Logical Operators:
+These operators are used to perform logical operations.
+- `&&` (logical AND)
+- `||` (logical OR)
+- `!` (logical NOT)
+
+1.4) Assignment Operators:
+These operators are used to assign values to variables.
+- `=` (simple assignment)
+- `+=` (addition assignment)
+- `-=` (subtraction assignment)
+- `*=` (multiplication assignment)
+- `/=` (division assignment)
+- `%=` (modulus assignment)
+
+1.5) Increment and Decrement Operators:
+These operators are used to increment or decrement the value of a variable.
+- `++` (increment)
+- `--` (decrement)
+
+1.6) Bitwise Operators:
+These operators perform bitwise operations on integer values.
+- `&` (bitwise AND)
+- `|` (bitwise OR)
+- `^` (bitwise XOR)
+- `~` (bitwise NOT)
+- `<<` (left shift)
+- `>>` (right shift)
+
+1.7) Conditional (Ternary) Operator:
+- `condition ? expr1 : expr2` (conditional operator, returns `expr1` if `condition` is true, otherwise returns `expr2`)
+
+1.8) Member Access Operators:
+These operators are used to access members of classes and structures.
+- `.` (dot operator)
+- `->` (arrow operator)
+
+1.9. Pointer Operators:
+- `*` (dereference operator)
+- `&` (address-of operator)
+
+1.10) sizeof Operator:
+- `sizeof` (returns the size of a data type or variable in bytes)
+
+2) These are the main categories of operators in C++. Some operators might have additional uses or behaviors when used in specific contexts, and 
+
+3) There are also some advanced topics like operator overloading in C++ that allow you to define custom behaviors for operators in user-defined classes.
+
+
+----- Advance concept ---------
+4) Operator overloading:
+
+Operator overloading in C++ is a powerful feature that allows you to define custom behaviors for the standard C++ operators when used with user-defined classes or structures. This enables you to make your classes behave more like built-in data types and perform operations that are meaningful for the objects you create.
+
+In other words, operator overloading lets you provide your own implementation for how operators should work with objects of your class. This can make your code more intuitive and readable, as it allows you to use familiar operators for your custom types.
+
+For example, you might want to define a `Vector` class and enable the use of the `+` operator to add two vectors together. Here's a simplified example:
+
+```cpp
+#include <iostream>
+
+class Vector {
+public:
+    int x, y;
+
+    Vector(int _x, int _y) : x(_x), y(_y) {}
+
+    Vector operator+(const Vector& other) {
+        return Vector(x + other.x, y + other.y);
+    }
+};
+
+int main() {
+    Vector v1(1, 2);
+    Vector v2(3, 4);
+    Vector result = v1 + v2; // Calls the custom + operator
+
+    std::cout << "Result: (" << result.x << ", " << result.y << ")" << std::endl;
+
+    return 0;
+}
+```
+
+In this example, the `+` operator is overloaded for the `Vector` class to perform vector addition. When you use the `+` operator between two `Vector` objects, the custom implementation is called, and the two vectors are added component-wise.
+
+Here's a quick summary of operator overloading:
+- Operator overloading allows you to redefine how operators work for user-defined classes.
+- You define operator overloads as member functions of the class, typically with the operator keyword followed by the operator symbol.
+- Some operators, like assignment (`=`) and function call (`()`), have specific syntax and usage rules for overloading.
+- Overloaded operators should make sense in the context of the class and adhere to their typical meanings when possible.
+
+Operator overloading can make your code more expressive and intuitive, but it's important to use it judiciously and consistently to avoid confusion or unexpected behavior.
