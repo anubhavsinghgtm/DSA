@@ -5,11 +5,11 @@ This is an online document store where you can find the problems and the solutio
 CPP
 
 ### Topics Covered
-1. Basics of CPP
-  1.1) Introduction of CPP
-  1.2) Syntax
-  1.3) Variables 
-  1.4) Operators
+1. Basics of CPP  
+  1.1) Introduction of CPP  
+  1.2) Syntax  
+  1.3) Variables  
+  1.4) Operators  
 
 
 
