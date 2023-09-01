@@ -1,0 +1,34 @@
+1. While loop
+```
+while(condition){
+    //statements;
+}
+```
+
+2. Do while loop
+```
+do {
+    //statements;
+}
+while(condition);
+
+```
+
+3. For loop
+
+```
+for(statement 1; statement 2; statement3){
+    // statements
+}
+
+```
+
+4. foreach loop
+
+```
+for(type variable: array){
+    // statements
+}
+
+```
+

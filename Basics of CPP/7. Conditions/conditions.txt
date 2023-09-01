@@ -1,0 +1,53 @@
+1. Syntax is:
+```
+if(condition){
+// run if it is true
+}
+else{
+// run if it is false
+}
+
+```
+
+2. multiple conditons
+
+```
+if(condition 1){
+
+}
+else if(condition 2){
+
+}
+else{
+
+}
+
+```
+
+3. Short hand 
+```
+variable = (condition) ? expression 1 : expression 2
+
+```
+
+-> expression 1 will run if the condition is true and otherwise expression 2 will run.
+
+
+=========== Switch case =========
+
+1. Syntax
+```
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+```
+
+-> if the break will not be there the next case will run automatically untill another break or end of the cases.

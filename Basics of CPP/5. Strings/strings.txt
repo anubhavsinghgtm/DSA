@@ -3,3 +3,12 @@
 2. We can simply add two strings using '+' and that is called 'string concatenation'.
 
 3. String in CPP is an object which has some function of its own. like str1.append(str2). This will add both of the string in str1.
+
+4. While taking string as an input we use 'getline()' function. Because 'cin >> fullname' only take the value before the spacebar. If there is some space in your string it will not gonna take string after that space.
+Syntax: 
+```
+getline(cin, string); 
+
+```
+
+5. 

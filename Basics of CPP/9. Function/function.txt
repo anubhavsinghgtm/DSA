@@ -1,0 +1,90 @@
+1. A function is a block of code which only runs when it is called.
+
+2. Function has a return type(type of value it return after performing it's operations).
+
+3. Function may or may not required some parameter. We can pass that.
+
+```
+int myFunction(int para1, int para2) {
+  // statements
+  return 0;
+}
+
+```
+
+-> this will return an integer also it required two parameters.
+
+4. When the parameter is passed to a function it becomes arguments.
+
+Ex - 
+```
+int twoSum(int a, int b){
+    return a + b;
+}
+
+
+twoSum(2,5);
+
+```
+
+-> 2 and 5 are passed to the function called as arguments. whereas a and b are the parameters.
+
+5. We can also set default parameter of any function.
+
+```
+int sum(int a=0, int b=0){
+  return a+b;
+}
+
+sum();
+
+```
+
+-> in this case if nothing is given 'a' and 'b' parameter will get 0.
+
+
+6. We can pass value by the reference inside a function. Rather than coping the value into the new parameter, it works on the same memory locations.
+
+```
+void swap(int &a, int &b){
+  int z = a;
+  a = b;
+  b = z;
+
+}
+
+
+int main(){
+  int first = 10;
+  int second = 20
+
+  swap(first,second);
+
+  cout << first << " " << second;
+}
+
+```
+
+
+7. Function Overloading: When multiple functions can have same name but with different parameters;
+[example in code file]
+
+
+8. Recursion: When function call itself. This breaks the problem into smaller problem. Carefully use, it may take a lot of memory.
+
+```
+int sum(int k) {
+  if (k > 0) {
+    return k + sum(k - 1);
+  } else {
+    return 0;
+  }
+}
+
+int main() {
+  int result = sum(10);
+  cout << result;
+  return 0;
+}
+
+```
