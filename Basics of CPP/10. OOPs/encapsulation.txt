@@ -1,0 +1,9 @@
+Encapsulation:
+
+1. The means of Encapsulation is to make sure sensitive data is 'hidden' from the user.
+
+2. The attributes must be declared as private. 
+
+3. There are 'get' and 'set' methods that can be used to get and set the private data.
+
+4. For providing higher level of security to the data we use Encapsulation.

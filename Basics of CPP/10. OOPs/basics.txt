@@ -1,0 +1,76 @@
+1. Classes and objects are the two main aspects of oops. Classes are the template for the object and objects are the instances of the class.
+
+2. When the object is created it inherited all the Variables and Function from the class.
+
+3. Syntax for a class:
+
+```
+
+class MyClass {
+    public:
+        int myNum;
+        string myString;
+}
+
+```
+
+-> public keyword is an access specifier, which tells what is the scope of the Variables. 
+-> inside the class, there is an integer and a string, these are called attributes.
+
+
+4. Methods: the function that belongs to a class
+4.1) we can define a method inside the class and outside the class as well.
+For inside the class:
+
+```
+class MyClass {        // The class
+  public:              // Access specifier
+    void myMethod() {  // Method/function defined inside the class
+      cout << "Hello World!";
+    }
+};
+
+int main() {
+  MyClass myObj;     // Create an object of MyClass
+  myObj.myMethod();  // Call the method
+  return 0;
+}
+
+```
+
+5. Constructor: It is a special method that is automatically called when an object of a class is created.
+5.1) To create a constructor, use the same name as the class, followed by parentheses ():
+
+```
+class MyClass {     // The class
+  public:           // Access specifier
+    MyClass() {     // Constructor
+      cout << "Hello World!";
+    }
+};
+
+int main() {
+  MyClass myObj;    // Create an object of MyClass (this will call the constructor)
+  return 0;
+}
+
+
+```
+
+
+6. There are three access specifier:
+a) Public: members are accessible from outside of the class
+b) Private: members cannot be accessed from outside of the class
+c) Protected: members cannot be accessed from outside of the class but can be accessed in inherited class.
+
+
+7. By default access specifier are private.
+
+```
+class MyClass{
+  int x; // private attributes
+  int y;
+
+};
+
+```

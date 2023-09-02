@@ -1,0 +1,42 @@
+Inheritance
+
+1. It is used to provide the attributes and methods from one class to other.
+
+2. a) base class(parent): from where the attributes and methods are shared.
+   b) derived class(child): which inherit the attributes and methods from base class.
+
+```
+
+class Vehicle {
+  public:
+    string brand = "Ford";
+    void honk() {
+      cout << "Tuut, tuut! \n" ;
+    }
+};
+
+// Derived class
+class Car: public Vehicle {
+  public:
+    string model = "Mustang";
+};
+
+
+```
+
+3. Multilevel Inheritance: We can do mulitlevel of Inheritance. For example a is the parent class, b is the derived class of a, and c is the derived class of b. Then there is a multilevel Inheritance. 
+
+
+4. Multiple Inheritance: A class can also be derived from more than one base class.
+Syntax
+```
+class A : public B, public C{
+
+}
+
+```
+
+-> Class A is inherited from the multiple class B and C
+
+
+-> After inheritance we can access members from a class those are either public or protected.

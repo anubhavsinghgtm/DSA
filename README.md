@@ -9,13 +9,13 @@ CPP
   1.1)  Introduction of CPP  
   1.2)  Syntax  
   1.3)  Variables  
-  1.4)  Operators
-  1.5)  Strings 
-  1.6)  Math 
-  1.7)  Conditions 
-  1.8)  Loops 
-  1.9)  Function 
-  1.10) OOPs 
+  1.4)  Operators  
+  1.5)  Strings  
+  1.6)  Math  
+  1.7)  Conditions  
+  1.8)  Loops  
+  1.9)  Function  
+  1.10) OOPs  
 
 
 
