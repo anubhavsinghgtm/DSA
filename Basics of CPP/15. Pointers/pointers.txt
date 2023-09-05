@@ -1,0 +1,29 @@
+1. By understanding the concept of references now we know how to access to the memory of a variable.
+
+2. Now, we want to store the memory of a variable into another variable and to do that we can't use normal "int type variable".
+
+3. So, to store the address of a variable we have pointers.
+
+4. Pointers is created with * operator. 
+
+5. Dereference: We know how to store the address value to a pointer variable. We can access the address by simply printing the pointer variable also we can access what is inside that pointer variable and that is dereferencing.
+
+```
+int x = 10;
+int* ptr = &x;
+cout << ptr; // will print the address of x
+cout << *ptr // will print the value of x i.e. 10
+
+```
+
+
+6. We can change the value of a pointer but it will change the value of original variable.
+```
+int x = 10;
+int* ptr = &x;
+cout << *ptr <<endl; //
+*ptr = 20;
+cout << *ptr <<endl;
+cout << x <<endl;
+
+```

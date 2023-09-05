@@ -1,0 +1,71 @@
+1. Structure is a way to group several related variables into one place. These variables are known as a member of the structure.
+
+2. Structure can have different types of variables.
+
+3. Syntax
+
+```
+struct{
+    int myNum;
+    string myString;
+    bool isString;
+} myStructure; //variable name of structure
+
+```
+
+4. In order to access the member of structure we can use:
+
+```
+myStructure.myNum;
+
+```
+
+5. One struct can be assigned to many variables
+
+```
+struct {
+  string brand;
+  string model;
+  int year;
+} myCar1, myCar2; // We can add variables by separating them with a comma here
+
+// Put data into the first structure
+myCar1.brand = "BMW";
+myCar1.model = "X5";
+myCar1.year = 1999;
+
+// Put data into the second structure
+myCar2.brand = "Ford";
+myCar2.model = "Mustang";
+myCar2.year = 1969;
+
+// Print the structure members
+cout << myCar1.brand << " " << myCar1.model << " " << myCar1.year << "\n";
+cout << myCar2.brand << " " << myCar2.model << " " << myCar2.year << "\n";
+
+```
+
+
+6. Structure as a data type: By giving a name to the structure, we can treat it like a data type.
+
+```
+struct DataType1{
+    int x;
+    string y;
+};
+
+
+int main(){
+    DataType1 dt;
+    dt.x = 10;
+    dt.y = "hello";
+
+    DataType1 dy;
+    dy.x = 20;
+    dy.y = "Bye";
+
+    cout << dt.x << " " << dy.y<< endl;
+}
+
+``` 
+

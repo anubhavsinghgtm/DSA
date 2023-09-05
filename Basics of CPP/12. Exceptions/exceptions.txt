@@ -1,0 +1,24 @@
+1. Exceptions: in order to handle errors its good practice to use exception handling keywords to your code. These increase the creadibility of your code.
+
+2. Try, throw and catch are the keywords used for exceptions handling.
+
+3. Syntax
+```
+try{
+    //block of code 
+    throw exception;
+}
+
+catch(){
+    // block of code to handle errors
+}
+
+```
+
+
+4. In the example code of 'exceptions.cpp' file. if the age is less than 18 that will throw an exception and the exception is handled by the catch block.
+
+5. catch block takes a parameter and provide some instruction to the user to try in different way. 
+
+
+6. Sometimes we don't know the type of our exception then we use (...) to handle anything.

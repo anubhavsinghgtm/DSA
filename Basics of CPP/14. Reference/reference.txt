@@ -1,0 +1,7 @@
+1. Reference variable is a reference to existing variable and it is accessed using '&' operators.
+
+2. '&' operator can also be used to get the memory address of a variable.
+
+
+
+

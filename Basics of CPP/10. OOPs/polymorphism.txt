@@ -1,0 +1,5 @@
+Polymorphism
+
+1. Polymorphism means "many form" and it occurs when we have multiple classes inherited with each other.
+
+2. 

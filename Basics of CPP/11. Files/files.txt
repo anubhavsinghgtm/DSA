@@ -1,0 +1,11 @@
+Files
+
+1. In order to work with files in cpp we use 'fstream' library.
+
+2. to create and write in the file you have 'ofstream'.
+
+3. to read from a file 'ifstream'.
+
+4. 'fstream' is combination of 'ofstream' and 'ifstream'.
+
+
